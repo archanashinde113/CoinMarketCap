@@ -9,7 +9,7 @@ new Promise(async (resolve, reject) => {
   try {
     response = await axios.get('https://pro-api.coinmarketcap.com/v1/tools/price-conversion?amount=50&symbol=BNB&convert=USD', {
       headers: {
-        'X-CMC_PRO_API_KEY': '4df97594-cd82-4d26-851a-1579d83f08e0',
+        'X-CMC_PRO_API_KEY': 'API_KEY',
       },
     });
   } catch(ex) {
