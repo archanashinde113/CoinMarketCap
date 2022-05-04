@@ -1,19 +1,9 @@
 const mongoose = require('mongoose');
 
 const imageSchema = new mongoose.Schema({
-   name:{
-       type:String
-   },
-
-    amount:{
-        type: Number
-    },
-    price:{
-        type:Number
-    },
-    USD:{
-        type:Number
-    }
+  data:{
+      type:String
+  }
    
 },
 {timestamps:true}

@@ -19,20 +19,21 @@ new Promise(async (resolve, reject) => {
     reject(ex);
   }
   if (response) {
-    // success
+  
 
-  //   const USD= req.body;
-  //  coinapi = new coinmarketcapapi({
-     
-  // });
-  // coinmarketcapapi.USD = USD;
-  // coinapi.save();
+    const data= req.body;
+   
+  
     const json = response.data;
     console.log(json);
     resolve(json);
     res.send(json.data.quote.USD);
-   
-
+    
+    coinapi = new coinmarketcapapi({
+     
+      data
+   });
+   coinapi.save();
      
            
   }

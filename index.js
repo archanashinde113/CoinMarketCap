@@ -6,7 +6,7 @@ const dotenv = require('dotenv')
 const app = express();
 
 
-const coinmarket = require('./routes')
+const coinmarket = require('./Router/routes')
 app.use('/coinmarket',coinmarket);
 
 
