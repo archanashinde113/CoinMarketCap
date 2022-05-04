@@ -1,5 +1,5 @@
 //const express = require('express')
-const coinmarketcapapi = require('./model')
+const coinmarketcapapi = require('../Model/model')
 const axios = require('axios');
 module.exports = {
     data : function (req, res) {
